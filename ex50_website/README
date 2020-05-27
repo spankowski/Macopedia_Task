@@ -1,0 +1,6 @@
+    Autor: Szymon Pankowski
+    Email: szymon.p.pankowski@gmail.com
+    Description: 
+
+    Test:
+        command: nose2

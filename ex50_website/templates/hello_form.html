@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Sample Web Form</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <h1>Fill Out This Form</h1>
+    <form action="/hello" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Greet</label>
+            <input type="text" name="greet" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter greet">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Name</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    {% endblock %}
+</body>
+
+</html>
